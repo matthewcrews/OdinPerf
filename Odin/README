@@ -1,0 +1,5 @@
+to compile main.odin use
+
+```bash
+odin build Odin/main.odin -file -build-mode=dll -o:speed
+```
