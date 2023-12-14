@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Compile Include="Program.fs" />
-    <Content Include="Odin\Odin.dll">
+    <Content Include="Odin.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
