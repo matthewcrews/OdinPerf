@@ -20,4 +20,4 @@ release.sh
 BenchmarkDotNet.Artifacts/
 *.dll
 *.exp
-*.lb
+*.lib
