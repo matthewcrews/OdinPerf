@@ -1,10 +1,10 @@
-To run benchmark you first need to build the Odin `.dll`. To do this, open a terminal and navigate to the root of the project. Build the Odin code using:
+To run benchmark you first need to build `Odin.dll`. Make sure you have [Odin installed](https://odin-lang.org/docs/install/). Open a terminal and navigate to the root of the project. Build the Odin code using:
 
 `odin build Odin -build-mode:dll -o:aggressive`
 
 This should procuce the necessary `Odin.dll` in the root of the project. You can now run the benchmark using:
 
-`dotnet run -c Release`
+`dotnet run -c Release -arch: x64`
 
 Results from my machine:
 
@@ -20,10 +20,10 @@ BenchmarkDotNet v0.13.10, Windows 11 (10.0.22621.2134/22H2/2022Update/SunValley2
 
 | Method        | Mean       | Error     | StdDev    |
 |-------------- |-----------:|----------:|----------:|
-| FSharp_Bench1 | 317.711 us | 2.0966 us | 1.7507 us |
-| Odin_Bench1   |   8.208 us | 0.1168 us | 0.1092 us |
-| FSharp_Bench2 | 309.631 us | 4.3325 us | 4.0527 us |
-| Odin_Bench2   |  12.531 us | 0.2471 us | 0.2311 us |
-| FSharp_Min    |  18.446 us | 0.2437 us | 0.2280 us |
-| Odin_Min      |   4.299 us | 0.0361 us | 0.0338 us |
+| FSharp_Bench1 | 291.169 us | 2.8295 us | 2.6467 us |
+| Odin_Bench1   |   8.233 us | 0.0817 us | 0.0764 us |
+| FSharp_Bench2 | 300.321 us | 2.6954 us | 2.3894 us |
+| Odin_Bench2   |  12.352 us | 0.2092 us | 0.1956 us |
+| FSharp_Min    |  18.401 us | 0.2386 us | 0.2232 us |
+| Odin_Min      |   4.351 us | 0.0474 us | 0.0443 us |
 ```
