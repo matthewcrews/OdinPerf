@@ -6,6 +6,8 @@ This should procuce the necessary `Odin.dll` in the root of the project. You can
 
 `dotnet run -c Release -arch: x64`
 
+> **Note** Odin Version: dev-2023-10-nightly:2cca0050
+
 Results from my machine:
 
 ```
