@@ -26,7 +26,7 @@ bench2 :: proc "c" (result, a, b: [^]i32, length: i32) {
 }
 
 @export
-bench3 :: proc "c" (#no_alias result, a, b: [^]i32, length: i32) {
+bench3 :: proc "c" (result, a, b: [^]i32, length: i32) {
 	for i := i32(0); i < length; i += 1 {
 		if a[i] < b[i] {
 			result[i] = b[i] * a[i]
