@@ -8,6 +8,12 @@ This should procuce the necessary `Odin.dll` in the root of the project. You can
 
 > **Note** Odin Version: dev-2023-10-nightly:2cca0050
 
+> **Note** For macOS users. Compile the Odin code to a `.dylib` file
+>
+> 1. Run `odin build Odin -build-mode:dll -out:libOdin -o:aggressive` 
+> 2. Add `libOdin.dylib` to `OdinPerf.fsproj` analogously: `<Content Include="libOdin.dylib">...</Content>`
+> 3. Run `dotnet run -c Release -arch: osx` or omit `-arch` entirely.
+
 Results from my machine:
 
 ```
